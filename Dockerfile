@@ -3,7 +3,7 @@ FROM linuxserver/baseimage
 # Install Depends
 RUN add-apt-repository ppa:transmissionbt/ppa && \
 apt-get update -q && \
-apt-get install transmission-cli transmission-common transmission-daemon openvpn curl && \
+apt-get install -y transmission-cli transmission-common transmission-daemon openvpn curl && \
 apt-get clean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
 
