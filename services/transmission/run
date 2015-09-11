@@ -1,4 +1,4 @@
 #!/bin/bash
 umask 0002
-exec /sbin/setuser abc /usr/bin/transmission-daemon -g /config
+exec /sbin/setuser abc /usr/bin/transmission-daemon -g /config &
 
