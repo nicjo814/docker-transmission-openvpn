@@ -14,6 +14,4 @@ VOLUME /downloads
 
 #Adding Custom files
 ADD init/ /etc/my_init.d/
-ADD services/ /etc/service/
-RUN chmod -v +x /etc/service/*/run
 RUN chmod -v +x /etc/my_init.d/*.sh
