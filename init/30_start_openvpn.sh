@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -f /config/openvpn.ovpn ]; then
     mkdir -p /dev/net
     if [ ! -c /dev/net/tun ]; then
